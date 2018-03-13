@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_setting_name"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="串口号"/>
+    <Spinner
+        android:id="@+id/sp_setting_option"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:entries="@array/serial_port"/>
+</LinearLayout>

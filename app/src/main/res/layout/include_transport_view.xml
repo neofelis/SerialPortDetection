@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp">
+
+    <EditText
+        android:id="@+id/et_transport_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_area_bg"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/rg_transport_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_transport_text"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="文本模式"/>
+            <RadioButton
+                android:id="@+id/rb_transport_hex"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:checked="true"
+                android:text="Hex模式"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_transport_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/rg_transport_model"
+            android:text="清空发送区"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/btn_transport_send"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/rg_transport_model"
+            android:layout_below="@id/btn_transport_clear"
+            android:text="发送"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_auto_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动发送"
+            android:layout_below="@id/rg_transport_model"/>
+
+        <EditText
+            android:id="@+id/et_auto_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_toRightOf="@id/cb_auto_send"
+            android:layout_below="@id/rg_transport_model"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ms"
+            android:textSize="22sp"
+            android:layout_toRightOf="@id/et_auto_time"
+            android:layout_below="@id/rg_transport_model"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">串口调试工具</string>
+    <string-array name="serial_port">
+        <item>ttyS0</item>
+        <item>ttyS1</item>
+        <item>ttyS2</item>
+        <item>ttyS3</item>
+        <item>ttyS4</item>
+        <item>ttyS5</item>
+        <item>ttyS6</item>
+        <item>ttyS7</item>
+        <item>ttyS8</item>
+        <item>ttyS9</item>
+        <item>ttyXRM0</item>
+        <item>ttyXRM1</item>
+        <item>ttymxc1</item>
+    </string-array>
+    <string-array name="baud_rate">
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>43000</item>
+        <item>56000</item>
+        <item>57600</item>
+    </string-array>
+    <string-array name="check">
+        <item>无校验</item>
+        <item>奇校验</item>
+        <item>偶校验</item>
+    </string-array>
+    <string-array name="data">
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="stop">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

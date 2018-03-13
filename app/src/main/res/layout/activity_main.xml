@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    tools:context="com.chuangyingkeji.serialportdetection.activity.MainActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        layout="@layout/include_receive_view"
+        android:layout_weight="11"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00ff00"
+        layout="@layout/include_transport_view"
+        android:layout_weight="4"/>
+    <GridView
+        android:id="@+id/gv_main_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidth"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:columnWidth="150dp"/>
+
+</LinearLayout>
